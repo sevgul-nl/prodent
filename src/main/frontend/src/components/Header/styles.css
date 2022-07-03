@@ -1,0 +1,26 @@
+.headerSection {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Open Sans';
+  text-align: center;
+  color: #000000;
+}
+
+.headerTitle {
+  text-transform: normal;
+  font-size: 35px;
+  margin-bottom: 6px;
+}
+
+.headerSubtitle {
+  font-size: 25px;
+  opacity: .7;
+}
+
+@media (max-width: 600px) {
+  .headerSection {
+    display: none;
+  }
+}
