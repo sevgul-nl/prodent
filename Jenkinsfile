@@ -31,7 +31,7 @@ pipeline {
                 cd ./frontend
                 ls -l
                 CI=false && npm install
-                npm run build
+                CI=false && npm run build
                 cd ../
                 rm -r ./src/main/resources/static
                 cp -r ./frontend/build ./src/main/resources/static
