@@ -30,6 +30,7 @@ pipeline {
                 #!/bin/bash
                 cd ./frontend
                 ls -l
+                $env:CI=$false
                 npm install
                 npm run build
                 cd ../
