@@ -28,11 +28,6 @@ pipeline {
             steps {
                 sh '''
                 #!/bin/bash
-                cd ./frontend
-                ls -l
-                CI=false && npm install
-                CI=false && npm run build
-                cd ../
                 rm -r ./src/main/resources/static
                 cp -r ./frontend/build ./src/main/resources/static
                 mvn clean install -U --file=pom.xml
