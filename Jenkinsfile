@@ -4,7 +4,7 @@ pipeline {
     tools {
         maven 'pi-Maven 3.6.3'
         jdk 'pi-open-jdk-8'
-        nodejs 'pi-Node 12.22.5'
+        nodejs 'pi-Node 16.15.1'
     }
     environment {
         registry = 'sevgulnl/prodent-profiling'
