@@ -33,7 +33,7 @@ pipeline {
                 npm install
                 npm run build
                 cd ../../../
-                cp -r ./src/main/frontend/build target/classes/static
+                cp -r ./src/main/frontend/build ./src/main/resources/static
                 mvn clean install -U --file=pom.xml
                 '''
             }
